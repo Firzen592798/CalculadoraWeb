@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14017130004750" configfile="/CalcWeb/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="pages/inputname" x="36" y="72" id="pf14017143858921" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" outlinks="pf140171442451710" inlinks="pf140171442451710" path="/CalculadoraView.xhtml"/>
+  <links id="pf140171442451710" target="pf14017143858921" source="pf14017143858921" outcome="calculadoraBean.somar"/>
+</pageflow:Pageflow>
