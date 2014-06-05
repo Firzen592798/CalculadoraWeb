@@ -6,7 +6,7 @@ import main.DivisaoPorZeroException;
 
 @ManagedBean(name="calculadoraBean")
 @SessionScoped
-public class CalculadoraBean {
+public class Calcula doraBean {
 	Calculadora calc; 
 	public CalculadoraBean(){
 		calc = new Calculadora();	
