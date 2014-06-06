@@ -9,14 +9,16 @@
     xmlns:ui="http://java.sun.com/jsf/facelets">
 <h:head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Insert title here</title>
+<title>Calculadora Web</title>
 </h:head>
 <h:body>
+<h1>Calculadora Web</h1>
+<h3>Para utilizar, digite os dois números e escolha a operação matemática desejada</h2>
 
 <h:form>
 
- <h:inputText id="numberOne" value="#{calculadoraBean.numberOne}"/>
- <h:inputText id="numberTwo" value="#{calculadoraBean.numberTwo}"/>
+ <h:inputText label="Primeiro número: " id="numberOne" value="#{calculadoraBean.numberOne}"/>
+ <h:inputText label="Segundo número: " id="numberTwo" value="#{calculadoraBean.numberTwo}"/>
 <hr></hr>
 <h:commandButton
    id="somar"
