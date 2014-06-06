@@ -68,7 +68,7 @@ public class CalculadoraBean {
 			result = String.valueOf(calc.div(Double.valueOf(numberOne), Double.valueOf(numberTwo)));
 			return "ok";
 		} catch (DivisaoPorZeroException e) {
-			result = "Não pode dividir por zero";
+			result = "Nao pode dividir por zero";
 			return "errodivzero";
 		} catch(NumberFormatException e){
 			result = "Erro no formato";
