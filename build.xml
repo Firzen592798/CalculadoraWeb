@@ -85,7 +85,16 @@
 	</target>
 
 
-	
+	<target name="zip">
+	    <tstamp/>
+	    <zip destfile="Artefatos.zip">
+	      <zipfileset dir=".">
+	        <exclude name="bin/"/>
+	      	<exclude name="Artefatos.zip"/> 		
+	      </zipfileset>
+	    </zip>
+	  </target>
+						
 
 
 	<!-- ============================================================== -->
@@ -148,6 +157,7 @@
 	<target name="list" description="List Tomcat applications">
 		<list url="${tomcat.manager.url}" username="${tomcat.manager.username}" password="${tomcat.manager.password}" />
 	</target>
+
 
 	<target name="undeploy" description="Remove application in Tomcat">
 		<undeploy url="${tomcat.manager.url}" username="${tomcat.manager.username}" password="${tomcat.manager.password}" path="/${app.name}" failonerror="erro">
